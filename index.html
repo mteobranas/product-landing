@@ -1,81 +1,123 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Landing</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55cc47b432.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <main>
-        <section>
-            <header id="header">
-                <img id="header-img"
-                    src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png">
-                <nav id="nav-bar">
-                    <a class="nav-link" href="#features">Features</a>
-                    <a class="nav-link" href="#how-it-works">How it works</a>
-                    <a class="nav-link" href="#pricing">Pricing</a>
-                </nav>
-            </header>
-        </section>
-        <section>
-            <label>
-                <form id="form" action="https://www.freecodecamp.com/email-submit">
-                    <h1>Handcrafted, home-made masterpieces</h1>
-                    <input id="email" name="email" type="email" placeholder="Enter your email adress"></input>
-                    <input id="submit" type="submit" value="Get started"></input>
-                </form>
-            </label>
-        </section>
-        <section id="features">
-            <h1>Premium Materials</h1>
-            <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your
-                purchase.</p>
-            <h1>Fast Shipping</h1>
-            <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free
-                returns if you are not satisfied.</p>
-            <h1>Quality Assurance</h1>
-            <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the
-                pitch of your instrument.</p>
-        </section>
-        <section id="how-it-works">
-            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc"
-                title="Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </section>
-        <section id="pricing">
-            <div id="product">
-                <div>TENOR TROMBONE</div>
-                <h2>$600</h2>
-                <ul>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                </ul>
+    <header id="header">
+        <img src="./images/product-landing-page-logo.png" alt="page logo" id="header-img">
+        <nav id="nav-bar">
+            <ul id="nav__bar">
+                <li><a href="#hero" class="nav-link">Features</a></li>
+                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="hero">
+        <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
+            <h1>Handcrafted, home-made masterpieces</h1>
+            <input type="email" id="email" placeholder="Enter your email address" required>
+            <input type="submit" id="submit" value="GET STARTED" class="button">
+        </form>
+    </section>
+    <main id="features">
+        <div class="grid">
+            <div class="icon">
+                <i class="fa fa-3x fa-fire"></i>
             </div>
-            <div id="product">
-                <div>BASS TROMBONE</div>
-                <h2>$900</h2>
-                <ul>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                </ul>
+            <div class="desc">
+                <h2>Premium Materials</h2>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of
+                    your purchase.</p>
             </div>
-            <div id="product">
-                <div>VALVE TROMBONE</div>
-                <h2>$1200</h2>
-                <ul>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                    <li>Lorem ipsum.</li>
-                </ul>
+        </div>
+        <div class="grid">
+            <div class="icon">
+                <i class="fa fa-3x fa-truck"></i>
             </div>
-        </section>
+            <div class="desc">
+                <h2>Fast Shipping</h2>
+                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free
+                    returns if you are not satisfied.</p>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="icon">
+                <i class="fa fa-3x fa-battery-full"></i>
+            </div>
+            <div class="desc">
+                <h2>Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test
+                    the pitch of your instrument.</p>
+            </div>
+        </div>
     </main>
+    <section id="how-it-works">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+            title="Roman Carnival Overture Op. 9 for Five Trombones" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </section>
+    <section id="pricing">
+        <div class="grid">
+            <div class="container">
+                <div class="title">
+                    <h4>TENOR TROMBONE</h3>
+                </div>
+                <div class="price">
+                    <h2>$600</h2>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button class="button">Select</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="title">
+                    <h4>BASS TROMBONE</h3>
+                </div>
+                <div class="price">
+                    <h2>$900</h2>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button class="button">Select</button>
+                </div>
+            </div>
+            <div class="container">
+                <div class="title">
+                    <h4>VALVE TROMBONE</h3>
+                </div>
+                <div class="price">
+                    <h2>$1200</h2>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum.</p>
+                    <p>Lorem ipsum dolor.</p>
+                    <p>Lorem ipsum.</p>
+                    <button class="button">Select</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="footer">
+            <div id="footer-content">
+                <h5><a href="#" class="link">Privacy</a></h5>
+                <h5><a href="#" class="link">Terms</a></h5>
+                <h5><a href="#" class="link">Contact</a></h5>
+            </div>
+            <p>Copyright 2023, Original Trombones</p>
+        </div>
+    </footer>
 </body>
 
 </html>
